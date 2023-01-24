@@ -104,6 +104,7 @@ footer{
     background-color: #FCFAF8;
     padding: 2% 5%;
     bottom:0;
+    position: sticky;
     width: 90%;
 }
 
