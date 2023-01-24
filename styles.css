@@ -1,2 +1,114 @@
 /* hidden overflow for popup feature */
 
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Inter', sans-serif;
+    color: #383838;
+    background: radial-gradient(67.86% 67.86% at 41.49% 32.14%, #9B9CDA 0%, #ADBEFF 31.77%, #BBDDE0 100%)
+}
+
+h1{
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 54.1175px;
+line-height: 52px;
+/* or 96% */
+
+display: flex;
+align-items: center;
+letter-spacing: -1.09883px;
+text-transform: uppercase;
+
+color: #4E4E4E;
+}
+
+h2{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.4295px;
+    line-height: 109%;
+
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #383838;
+}
+
+h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+
+    color: #4E4E4E;
+}
+
+header{
+    padding: 2% 5%;
+    display: flex;
+    align-content: space-between;
+}
+
+.header2{
+    padding: 2% 5%;
+    margin: 10%;
+}
+
+.drop {
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 5%;
+    background: linear-gradient(123.33deg, rgba(255, 255, 255, 0.6) 7.83%, rgba(250, 250, 250, 0.2) 93.38%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 13px 20px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    margin: 20px ;
+}
+
+.drop a{
+    text-decoration: none;
+    color:#383838;
+}
+
+.drop:hover{
+    transform: scale(1.03);
+    transition: all 1s;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+footer{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #FCFAF8;
+    padding: 2% 5%;
+    bottom:0;
+    position: absolute;
+    width: 90%;
+}
+
+footer a{
+    text-decoration: none;
+    color:#383838;
+}
