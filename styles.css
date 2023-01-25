@@ -57,7 +57,7 @@ h3{
 header{
     padding: 2% 5%;
     display: flex;
-    align-content: flex-start;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
