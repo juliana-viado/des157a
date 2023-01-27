@@ -9,7 +9,7 @@ body{
 }
 
 .banner{
-    background-image: url(images/header.png);
+    background: radial-gradient(67.86% 67.86% at 41.49% 32.14%, #9B9CDA 0%, #ADBEFF 31.77%, #BBDDE0 100%);
     padding: 2% 5%;
 }
 
