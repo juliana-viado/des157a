@@ -121,7 +121,7 @@ main{
 
 .one{
     flex: 1 1 auto;
-    width: fit-content;
+    width: 65%;
 }
 
 .two{
