@@ -14,9 +14,10 @@
     <div id="theAnswer"></div>
 
     <script>
+        //It is a variation of 8ball. Ask a questions and the computer will tell you true or false.
         
         var question = prompt("Ask me a true or false question.");
-        var answers = ["true", "false"]
+        var answers = ["true.", "false."]
         
 
         function getAnswer(min,max){
@@ -34,6 +35,7 @@
             theAnswer.innerHTML= (`${answer}`);
         }
         
+        document.getElementById("theAnswer").style.color = "red";
     
 
     
