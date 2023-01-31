@@ -17,8 +17,8 @@
         //It is a variation of 8ball. Ask a questions and the computer will tell you true or false.
         
         var question = prompt("Ask me a true or false question.");
-        var answers = ["true.", "false."]
-        document.getElementById("theAnswer").style.color = "red";
+        var answers = ["true.", "false."];
+    
 
         function getAnswer(min,max){
             return Math.floor ((max-min+1)*Math.random())+min;
@@ -35,6 +35,12 @@
             theAnswer.innerHTML= (`${answer}`);
         }
         
+         if (answer = (answers[0])){
+            document.getElementById("theAnswer").style.color = "green";
+         } else {
+             document.getElementById("theAnswer").style.color = "red";
+         }
+             
     
 
     
