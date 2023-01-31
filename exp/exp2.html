@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiment 1</title>
+    <title>Experiment 2</title>
 </head>
 <body>
     <h1>Experiment 2</h1>
@@ -18,7 +18,7 @@
         
         var question = prompt("Ask me a true or false question.");
         var answers = ["true.", "false."]
-        
+        document.getElementById("theAnswer").style.color = "red";
 
         function getAnswer(min,max){
             return Math.floor ((max-min+1)*Math.random())+min;
@@ -35,7 +35,6 @@
             theAnswer.innerHTML= (`${answer}`);
         }
         
-        document.getElementById("theAnswer").style.color = "red";
     
 
     
