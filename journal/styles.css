@@ -26,6 +26,15 @@ header{
     display: flex;
     align-items: center;
   }
+
+h2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.5em;
+    color: #FCFAF8;
+  }
+
+
   p{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
@@ -41,6 +50,7 @@ header{
 }
 
   footer{
+    font-family: 'Nunito Sans', sans-serif;
     display: flex;
     flex-wrap:wrap;
     align-items: center;
@@ -50,4 +60,5 @@ header{
     padding: 2% 5%;
     bottom:0;
     width: 90%;
+    color: #FCFAF8;
 }
