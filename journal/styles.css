@@ -17,7 +17,7 @@ header{
     max-width: 1200px;
 }
 
-  h1 {
+  time {
     font-family: 'Unbounded', cursive;
     font-weight: 600;
     font-size: 1em;
@@ -27,10 +27,10 @@ header{
     align-items: center;
   }
 
-h2{
+h1{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
-    font-size: 0.5em;
+    font-size: 3em;
     color: #FCFAF8;
   }
 
@@ -38,13 +38,14 @@ h2{
   p{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
-    font-size: 0.2em;
+    font-size: 1em;
     color: #FCFAF8;
     display: flex;
     align-items: left;
   }
 
   a{
+    font-family: 'Nunito Sans', sans-serif;
     text-decoration: none;
     color:#383838;
 }
