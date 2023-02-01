@@ -17,14 +17,11 @@ header{
     max-width: 1200px;
 }
 
-  time {
+  time{
     font-family: 'Unbounded', cursive;
     font-weight: 600;
-    font-size: 1em;
+    font-size: 2em;
     line-height: 52px;
-    margin: 0;
-    display: flex;
-    align-items: center;
   }
 
 h1{
