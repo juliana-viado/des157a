@@ -54,8 +54,13 @@ h1{
     align-items: center;
     justify-content: space-between;
     padding: 15px;
-    background-color: #FCFAF8;
     padding: 2% 5%;
+    background: linear-gradient(123.33deg, rgba(255, 255, 255, 0.6) 7.83%, rgba(250, 250, 250, 0.2) 93.38%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 10px 13px 20px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    margin: 20px;
     bottom:0;
     width: 90%;
     color: #FCFAF8;
