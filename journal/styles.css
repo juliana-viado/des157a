@@ -1,7 +1,10 @@
 html, body {
     background: #66a266;
     margin: 0;
-  
+    line-height: 14pt;
+    padding-left: 5pt;
+    padding-right: 5pt;
+    padding-top: 5pt;
   }
 
   main{
