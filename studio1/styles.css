@@ -1,0 +1,48 @@
+main{
+    display: flex;
+    font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.madlib{
+    flex: 1 1 auto;
+    background-color: #f4f7fA;
+    padding: 1em;
+    width: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+#sent{
+    background: #0F77F0;
+    backdrop-filter: blur(16px);
+    border-radius: 12px;
+}
+
+.message-container {
+    flex: 2 1 auto;
+    padding: 4%;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 1em;
+    background-color: #ffffff;
+    width: 50%;
+  }
+  
+  .message-bubble {
+    background-color: #f0f0f0;
+    border-radius: 0.5em;
+    padding: 1em;
+    max-width: 60%;
+    word-wrap: break-word;
+  }
+  
+  .message-time {
+    font-size: 0.8em;
+    color: #999999;
+    margin-top: 0.5em;
+    text-align: right;
+  }
