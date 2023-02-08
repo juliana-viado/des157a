@@ -14,37 +14,51 @@
     <main>
        <div class="madlib">
         <h1>The Worst Texter</h1>
-        <p>Input the following</p>
+        <p class="instruction">Input the following</p>
 
             <form>
-                <label for="fName">Enter your first name</label>
-                <input type="text" id="fName" required>
                 
-                <label for="lName">Enter your last name</label>
+                <input type="text" id="fName" required>
+                <label for="fName">Enter your first name</label>
+
+                
                 <input type="text" id="lName" required>
+                <label for="lName">Enter your last name</label>
 
-                <label for="adj1">Enter an adjective</label>
                 <input type="text" id="adj1" required>
+                <label for="adj1">Enter an adjective</label>
 
-                <label for="adj2">Enter a second adjective</label>
                 <input type="text" id="adj2" required>
+                <label for="adj2">Enter a second adjective</label>
+                
 
-                <label for="noun">Enter an noun</label>
                 <input type="text" id="noun" required>
+                <label for="noun">Enter an noun</label>
+                
             </form>
-        <input id="sent" type="submit" value="Send">
+            <div id="sent">
+                <input id="send" type="submit" value="Send">
+                <img src="images/send.png" alt="send">
+            </div>
        </div>
        
        <div class="message-container">
-            <article>
-                <img src="images/chevron.left.png" alt="back">
-                <p>Back</p>
-                <img src="images/Video.png" alt="video">
+            <article class="message-nav">
+                <div class="message-nav-left">
+                    <img src="images/chevron.left.png" alt="arrow">
+                    <p>Back</p>
+                </div>
+                <img src="images/bestie.png" alt="profile pic" class="big-bestie">
+                <img src="images/Video.png" alt="video" class="video">
             </article>
-            <article class="message-bubble">
-                <p>What happened with your roommates?”</p>
-                <img src="images/user.png" alt="profile1">
-            </article>
+            
+            <h2>💖 BESTIE 💖</h2>
+            <div class="bestie">
+                <article class="message-bubble">
+                    <p>What happened with your roommates?”</p>
+                </article>
+                <img src="images/bestie.png" alt="profile1">
+            </div>
         </div>
     </main>
 </body>
