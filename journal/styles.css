@@ -17,21 +17,22 @@ article{
     color: #262A34;
     box-shadow: 0px 7.74785px 11.6218px rgba(0, 0, 0, 0.25);
     border-radius: 23.2436px;
+    padding: 5%;
 }
 
 time{
-    font-family: 'Unbounded', cursive;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
-    font-size: 2em;
+    font-size: 1.3em;
     line-height: 52px;
-    color: #FCFAF8;
+    color: #ffa9d1;
   }
 
 h1{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 600;
     font-size: 3em;
-    color: #FCFAF8;
+    color: #F91880;
   }
 
 figcaption{
@@ -44,6 +45,7 @@ figcaption{
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
     font-size: 1em;
+    line-height: normal;
     color: #FCFAF8;
   }
 
