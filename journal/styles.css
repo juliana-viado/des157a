@@ -24,6 +24,7 @@ time{
     font-weight: 600;
     font-size: 2em;
     line-height: 52px;
+    color: #FCFAF8;
   }
 
 h1{
@@ -49,7 +50,7 @@ figcaption{
   a{
     font-family: 'Nunito Sans', sans-serif;
     text-decoration: none;
-    color:#383838;
+    color: #FCFAF8;
 }
 
   footer{
