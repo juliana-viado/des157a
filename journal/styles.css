@@ -5,11 +5,7 @@ html, body {
     padding: 20px;
   }
 
-header{
-    padding: 20px;
-}
-
-  main{
+main{
     padding: 2%;
     display: flex;
     flex-wrap:wrap;
@@ -17,7 +13,7 @@ header{
     max-width: 1200px;
 }
 
-  time{
+time{
     font-family: 'Unbounded', cursive;
     font-weight: 600;
     font-size: 2em;
