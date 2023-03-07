@@ -1,0 +1,55 @@
+html, body {
+    background: #262A34;
+    margin: 0;
+    line-height: 14pt;
+    padding: 20px;
+  }
+
+main{
+    padding: 2%;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    max-width: 1200px;
+}
+
+article{
+    color: #262A34;
+    box-shadow: 0px 7.74785px 11.6218px rgba(0, 0, 0, 0.25);
+    border-radius: 23.2436px;
+    padding: 5%;
+}
+
+
+h1{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    color: #F91880;
+  }
+
+figcaption{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #FCFAF8;
+    padding: 5%;
+}
+
+h2{
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: normal;
+  color: #ffbfce;
+}
+
+p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: normal;
+    color: #FCFAF8;
+  }
+
+
