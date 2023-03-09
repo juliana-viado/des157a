@@ -11,6 +11,8 @@
     const score1 = document.getElementById('score1');
     const score2 = document.getElementById('score2');
     const buttons = document.getElementById('buttons');
+    const rolling = document.querySelector("#roll");
+    const passing = document.querySelector("#pass");
 
     // const diceSound = new Audio('media/diceRoll.mp3');
     // const winSound = new Audio('media/win.mp3');
@@ -52,7 +54,7 @@
 
     function setUpTurn() {
 
-        document.querySelector("#roll").className = "showing";
+        rolling.className = "showing";
         // document.querySelector("#pass").className = "showing";
 
         actionText.innerHTML = '';
@@ -61,15 +63,18 @@
         if (gameData.index === 0) {
             p1Score.style.backgroundColor = "#007AFF";
             p2Score.style.backgroundColor = "#da0166";
-            document.querySelector("#roll").className = "showing";
+            rolling.className = "showing";
 
-            document.querySelector("#roll").addEventListener('click', function() {
+            rolling.addEventListener('click', function() {
+                console.log('dice was rolled');
                 throwDice();
             });
         } else if (gameData.index === 1) {
             p1Score.style.backgroundColor = "#0059b8";
             p2Score.style.backgroundColor = "#F91880";
-            document.querySelector("#roll").addEventListener('click', function() {
+            rolling.className = "showing";
+
+            rolling.addEventListener('click', function() {
                 throwDice();
             });
         }
@@ -77,7 +82,6 @@
 
     // function that rolls the dice for the user 
     function throwDice() {
-        diceSound.play();
         
         actionText.innerHTML = '';
         dice.innerHTML = '';
@@ -127,8 +131,8 @@
 
             // changes buttons and proceeds with game depending on whose turn it is
             if (gameData.index === 0) {
-                rolling.innerHTML = 'Roll';
-                passing.innerHTML = 'Pass';
+                rolling.className = "showing";
+                passing.className = "showing";
 
                 document.getElementById('roll').addEventListener('click', function() {
                     throwDice();
@@ -143,8 +147,8 @@
     
 
             } else if (gameData.index === 1) {
-                rolling.innerHTML = 'Roll';
-                passing.innerHTML = 'Pass';
+                rolling.className = "showing";
+                passing.className = "showing";
 
                 document.getElementById('roll').addEventListener('click', function() {
                     throwDice();
