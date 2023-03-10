@@ -89,16 +89,19 @@
         gameData.roll1 = Math.floor(Math.random() * 7) + 1;
         gameData.roll2 = Math.floor(Math.random() * 7) + 1;
 
-        
-        dice.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}"> <img src="${gameData.dice[gameData.roll2+5]}">`;
+        if (gameData.index === 0) {
+            dice.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}">`;
+        } else {
+            dice.innerHTML += `<img src="${gameData.dice[gameData.roll1+6]}">`;
+        }
 
         gameData.rollSum = gameData.roll1 + gameData.roll2;
 
-        if (gameData.roll1 === 7 || gameData.roll2 === 7) {
+        if (dice.innerHTML === `<img src="${gameData.dice[6]}">` || dice.innerHTML === `<img src="${gameData.dice[13]}">`) {
             // if snake eyes are rolled, changes turn and resets their score
             console.log("snake eyes were rolled");
 
-            actionText.innerHTML += '<p>Oh snap! Snake Eyes!</p>';
+            actionText.innerHTML += '<p>Oh snap! Your penguin fell!</p>';
             gameData.score[gameData.index] = 0;
 
             buttons.innerHTML = '';
@@ -113,17 +116,6 @@
 
             setTimeout(setUpTurn, 2000);
 
-        } else if (gameData.roll1 === 1 || gameData.roll2 === 1) {
-            // if a player rolls 1, switches to the other player
-
-            console.log("one of the two dice was a 1");
-            gameData.index ? (gameData.index = 0) : (gameData.index = 1);
-            actionText.innerHTML += `<p>Sorry, one of your rolls was a one, switching to ${gameData.players[gameData.index]}</p>`;
-
-            buttons.innerHTML = '';
-
-            setTimeout(setUpTurn, 2000);
-
         } else {
             // game proceeds if roll is without a 1
             console.log("the game proceeds")
@@ -134,11 +126,11 @@
                 rolling.className = "showing";
                 passing.className = "showing";
 
-                document.getElementById('roll').addEventListener('click', function() {
+                rolling.addEventListener('click', function() {
                     throwDice();
                 });
 
-                document.getElementById('pass').addEventListener('click', function() {
+                passing.addEventListener('click', function() {
                     gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                     setUpTurn();
                 });
@@ -150,11 +142,11 @@
                 rolling.className = "showing";
                 passing.className = "showing";
 
-                document.getElementById('roll').addEventListener('click', function() {
+                rolling.addEventListener('click', function() {
                     throwDice();
                 });
 
-                document.getElementById('pass').addEventListener('click', function() {
+                passing.addEventListener('click', function() {
                     gameData.index ? (gameData.index = 0) : (gameData.index = 1);
                     setUpTurn();
                 });
@@ -162,8 +154,6 @@
                 checkWinningCondition();
     
             }
-
-
         }
     }
 
