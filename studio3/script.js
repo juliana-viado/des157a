@@ -101,8 +101,6 @@
             actionText.innerHTML += '<p>Oh snap! Your penguin fell!</p>';
             gameData.score[gameData.index] = 0;
 
-            buttons.innerHTML = '';
-
             if (gameData.index === 0){
                 gameData.index = 1;
             } else {
@@ -157,7 +155,6 @@
     // function that checks if player won or not and ends game if a player wins
     function checkWinningCondition() {
         if (gameData.score[gameData.index] > gameData.gameEnd) {
-            winSound.play();
             
             actionText.innerHTML = `<h2>${gameData.players[gameData.index]} wins with ${gameData.score[gameData.index]} points!</h2>`;
 
