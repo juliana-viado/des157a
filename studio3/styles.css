@@ -141,14 +141,13 @@ body {
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-    height: 90px;
 }
 
 #actionText h2{
     text-transform: uppercase;
 }
 
-#startgame {
+#startgame, #roll, #pass {
     padding: 15px 25px;
     border: none;
     border-radius: 10px;
@@ -214,6 +213,7 @@ body {
     font-weight: 600;
     color: white;
     text-transform: uppercase;
+    gap:20px;
 }
 
 
