@@ -13,9 +13,6 @@
     const buttons = document.getElementById('buttons');
     const rolling = document.querySelector("#roll");
     const passing = document.querySelector("#pass");
-
-    // const diceSound = new Audio('media/diceRoll.mp3');
-    // const winSound = new Audio('media/win.mp3');
     
     const gameData = {
         dice:['images/die1.png','images/die2.png','images/die3.png','images/die4.png','images/die5.png','images/die6.png','images/die7.png','images/die8.png','images/die9.png','images/die10.png','images/die11.png','images/die12.png','images/die13.png','images/die14.png'],
