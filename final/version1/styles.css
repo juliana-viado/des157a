@@ -1,0 +1,280 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#scoreboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+    padding: 50px;
+    line-height: 1.5em;
+    background-image: url('images/newbkg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: fit-content;
+    max-width: 1200px;
+}
+
+
+/* info button and overlay */
+#infoBtn {
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    color: #007AFF;
+    background-color: #F4F4F4;
+    width: 45px;
+    height: auto;
+    border: 0px;
+    border-radius: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+#infoBtn:hover {
+    color: white;
+    background-color: #007AFF;
+    cursor:pointer;
+}
+
+#intro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    background-color: rgb(255, 255, 255);
+}
+
+#intro article {
+    box-sizing: border-box;
+    background-color: #007AFF;
+    border-radius: 20px;
+    padding: 60px;
+    width: 675px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#infoOverlay p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+#backBtn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #007AFF;
+    background-color: #ffffff;
+    width: 35px;
+    height: 35px;
+    border: 0px;
+    border-radius: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+#backBtn:hover {
+    color: white;
+    background-color: #535353;
+    cursor:pointer;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* code for styling the game control */
+
+
+/* code for styling main space with game */
+
+#gameplay {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#dices {
+    display: grid;
+}
+
+#dice {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dice img {
+    display: block;
+    margin: 20px;
+}
+
+#actionText {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+}
+
+#actionText h2{
+    text-transform: uppercase;
+}
+
+#startgame {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+
+    font-size: 200%;
+    font-weight: 600;
+    color: #007AFF;
+    background-color: #F4F4F4;
+}
+#startgame:hover {
+    color: white;
+    cursor:pointer;
+}
+
+
+/* styling player 1's side*/
+
+#p1 {
+    margin: 20px;
+    /* justify-content: center; */
+}
+
+
+#p1 h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+#p1Score {
+    display: flex;
+    padding: 10px 20px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#score1 {
+    display: flex;
+    align-items: center;
+    font-size:24px;
+    font-weight: 700;
+    color:#ffffff;
+
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/* styling player 2's side */
+#p2 {
+    margin: 20px;
+    /* justify-content: center; */
+}
+
+
+#p2 h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+#p2Score {
+    display: flex;
+    padding: 10px 20px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#score2 {
+    display: flex;
+    align-items: center;
+    font-size:24px;
+    font-weight: 700;
+    color:#ffffff;
+
+}
+
+
+
+
+/* styling the footer */
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 30px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+}
+
+
+/* styling the Sources page */
+#winLink {
+    text-decoration: none;
+    color: rgb(44, 44, 45);
+    font-family: 'Raleway', sans-serif;
+}
+
+.sourcesText {
+    font-size: 24px;
+    font-weight: 600;
+}

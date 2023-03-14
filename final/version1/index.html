@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game of Pig</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+   
+    <section id="intro" class="showing">
+        
+        <article>
+            <img src="images/game-name.png" alt ='game name' width="100">
+            <p>The game is played by two players, and on each turn, the current player does a dance move. The points per dance move is added to the current player's score, as long as the penguin does not fall. If a penguin falls, their current score is reset to zero, and their turn ends. After each successful dance move, the current player can choose to either dance again or pass the turn to the other player. </p>
+            <p> The first player to reach a score of 30 points or higher wins. However, if a penguin falls, their score is reset to zero, so players must be careful to avoid this outcome.</p>
+            <button id="startgame" class="showing">Let's Dance</button>
+        </article>
+    </section>
+
+
+ <header>
+        <img src="images/mininame.png" alt ='game name' id="quitBtn" height="100">
+
+        <section id="scoreboard">
+            <section id="p1Score">
+                <p id="score1"></p>
+            </section>
+            <section id="p2Score">
+                <p id="score2"></p>
+            </section>
+        </section>
+    </header>
+    <p id="actionText"></p>
+    
+    <section id="gameplay">
+        <div id="dices">
+            <div id="dice"></div>
+            <div id="buttons">
+                <button id="roll" class="hidden">Roll</button>
+                <button id="pass" class="hidden">Pass</button>
+            </div>
+        </div>
+    </section>
+
+
+    
+</body>
+
+</html>
